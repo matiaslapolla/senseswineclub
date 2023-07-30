@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import DefaultFooter from "./components/layout/footer";
+import DefaultSidebar from "./components/layout/sidebar";
+import DefaultTopBar from "./components/layout/topbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <DefaultTopBar>
+        <DefaultFooter>
+          <DefaultSidebar>
+            <h1>React 18 clean!</h1>
+          </DefaultSidebar>
+        </DefaultFooter>
+      </DefaultTopBar>
+    </>
   );
 }
 
